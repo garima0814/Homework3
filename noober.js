@@ -39,7 +39,7 @@ function pageLoad() {
     passenger3DropoffAddressLine1 = ride[2].dropoffLocation.address
     passenger3DropoffAddressLine2 = ride[2].dropoffLocation.city + ', ' + ride[2].dropoffLocation.state + ' ' + ride[2].dropoffLocation.zip
 
-  } else if (numberoflegs == 1 && purpleRequested == true) {
+  } else if (numberoflegs == 1 && ride[0].purpleRequested == true) {
 
     levelOfService = 'Noober Purple'
 
