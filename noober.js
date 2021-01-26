@@ -61,7 +61,7 @@ function pageLoad() {
     passenger1DropoffAddressLine1 = ride[0].dropoffLocation.address
     passenger1DropoffAddressLine2 = ride[0].dropoffLocation.city + ', ' + ride[0].dropoffLocation.state + ' ' + ride[0].dropoffLocation.zip
 
-  } else {
+  } else if (numberoflegs == 1) {
     levelOfService = 'Noober X'
     passenger1Name = ride[0].passengerDetails.first + ' ' + ride[0].passengerDetails.last
     passenger1Phone = ride[0].passengerDetails.phoneNumber
